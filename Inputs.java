@@ -19,7 +19,6 @@ class Inputs {
         // System.out.printf("There are a lot of %s golfers in the world!", leftOrRight);
 
         // CALCULATOR EXAMPLE
-
         System.out.print("Enter your first number ");
         double numberOne = scanner.nextDouble();
         scanner.nextLine();
@@ -31,25 +30,49 @@ class Inputs {
 
         String operation = scanner.nextLine();
 
-        if(operation.equals("sum")){
-            double result = numberOne + numberTwo;
-            System.out.printf("%f + %f = %f", numberOne, numberTwo, result);
-        }else if (operation.equals("sub")) {
-            double result = numberOne - numberTwo;
-            System.out.printf("%f - %f = %f", numberOne, numberTwo, result);
-        }else if (operation.equals("mul")) {
-            double result = numberOne * numberTwo;
-            System.out.printf("%f * %f = %f", numberOne, numberTwo, result);
-        }else if (operation.equals("div")) {
-            if (numberTwo == 0){
-                System.out.println("You can not divide by Zero");
-            }else{
-                double result = numberOne / numberTwo;
-                System.out.printf("%f / %f = %f", numberOne, numberTwo, result);
-            }
-        }else {
-            System.out.println("%s is not supported by the calculater");
-        }
+
+        // SWITCH CASE EXAMPLE
+        // switch(operation){
+        //     case "sum":
+        //         System.out.printf("%f + %f = %f", numberOne, numberTwo, numberOne + numberTwo);
+        //         break;
+        //     case "sub":
+        //         System.out.printf("%f - %f = %f", numberOne, numberTwo, numberOne - numberTwo);
+        //         break;
+        //     case "div":
+        //         if(numberTwo == 0){
+        //             System.out.println("You can not divide by Zero");
+        //         }else{
+        //             System.out.printf("%f / %f = %f", numberOne, numberTwo, numberOne / numberTwo);
+        //             break;
+        //         }
+        //     case "mul":
+        //         System.out.printf("%f * %f = %f", numberOne, numberTwo, numberOne * numberTwo);
+        //         break;
+        //     default: 
+        //     System.out.println("%s is not supported by the calculater");
+        // }
+
+        //  IF ELSE EXAMPLE
+        // if(operation.equals("sum")){
+        //     double result = numberOne + numberTwo;
+        //     System.out.printf("%f + %f = %f", numberOne, numberTwo, result);
+        // }else if (operation.equals("sub")) {
+        //     double result = numberOne - numberTwo;
+        //     System.out.printf("%f - %f = %f", numberOne, numberTwo, result);
+        // }else if (operation.equals("mul")) {
+        //     double result = numberOne * numberTwo;
+        //     System.out.printf("%f * %f = %f", numberOne, numberTwo, result);
+        // }else if (operation.equals("div")) {
+        //     if (numberTwo == 0){
+        //         System.out.println("You can not divide by Zero");
+        //     }else{
+        //         double result = numberOne / numberTwo;
+        //         System.out.printf("%f / %f = %f", numberOne, numberTwo, result);
+        //     }
+        // }else {
+        //     System.out.println("%s is not supported by the calculater");
+        // }
         
 
         scanner.close();
